@@ -21,7 +21,7 @@ class Pokemon
   
   def self.find(id, db)
     sql = <<-SQL
-      SELECT pokemon.name, pokemon.type FROM pokemon
+      SELECT * FROM pokemon
       WHERE pokemon.id = ?
       LIMIT 1
     SQL
