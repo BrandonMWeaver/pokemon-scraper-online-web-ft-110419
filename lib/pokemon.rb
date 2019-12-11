@@ -31,8 +31,4 @@ class Pokemon
     end.first
   end
   
-  def self.new_from_db(row)
-    pokemon = self.new(row)
-  end
-  
 end
