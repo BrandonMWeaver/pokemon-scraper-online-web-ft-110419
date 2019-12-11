@@ -1,3 +1,4 @@
+require "pry"
 class Pokemon
   
   attr_accessor :id, :name, :type, :db
@@ -31,6 +32,7 @@ class Pokemon
   end
   
   def self.new_from_db(row)
+    binding.pry
     pokemon = self.new({id: row[0], name: row[1], type: row[2]})
   end
   
